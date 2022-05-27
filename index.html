@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 6-3b</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <style>
+        body {
+            border: 0px;
+            padding: 0px;
+            font-family: Tahoma;
+        }
+        h2 {
+            text-align: center;
+        }
+        .contenedor {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: aliceblue;            
+            
+        }
+        .fila {
+            clear: both;
+            height: 25px;
+        }
+        .celda {
+            float:left;
+        }
+        .etiqueta {
+            text-align: left;
+            padding-left: 10px;
+            vertical-align: top;
+            
+        }
+        .control {
+            text-align: left;
+            width: auto;
+        }
+        .botones {
+            text-align: center;
+        }
+        .negrita {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>SOBRE MI Y COMO LLEGUÉ AQUÍ</h2>
+    <form action="http://servidor5/manejador3.asp" method="post">
+        <div class="contenedor">
+            <div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPITULO 0. QUE TRATA SOBRE MIS PRIMEROS CONTACTOS CON LA TECNOLOGÍA</p></div>
+                   
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta"><p>De siempre me habían gustado los ordenadores. Con apenas 6-7 años, llegó el primer PC a casa; un 3.8.6. Era un PC que iniciaba en MSDOS,
+                        y desde ahí se ejecutaban los programas (incluido WINDOWS). Mis juegos favoritos eran: <a href="http:\\www.google.es" target="_blank">Budokan</a>, <a href="#" target="_blank">Winter Games</a>, <a href="#" target="_blank">Block Out</a> y un 
+                        <a href="#" target="_blank">Simulador de Vuelo</a> donde nos encantaba intentar pasar por debajo del <a href="#" target="_blank">golden gate</a>.</p>
+                        <p> Para mi regalo del 14 cumpleaños pedí internet y para los 16 años pedí internet de fibra.
+                            Por aquella epoca ya mostraba mi interés por montar/desmontar cosas y romper/arreglar el PC. En mi casa, mi madre,
+                            me llamaba "el ingeniero".</p>
+                    </div>                   
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPITULO 1. QUE TRATA SOBRE COMO ME DECIDÍ SOBRE LO QUE ESTUDIAR</p></div>
+                    
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta"><p>Corría el año 2005 cuando termino Bachiller. Va a comenzar el curso 2005-06 y yo no tengo ni idea de lo que estudiar
+                        así que solo puse dos condiciones:
+                        <ol>
+                        <li>Que fuera una carrera técnica o diplomatura, es decir 3 años. Llevaba toda la vida estudiando y los 5 años de diplomatura o superior
+                            me parecían una eternidad.</li>
+                        <li>Que fuera en la Universidad de Alicante, no teníamos medios para irme a estudiar fuera, me venía cerca y además me gustaba el campus de
+                            la Universidad de Alicante.</li></p>
+                        </ol> 
+                        
+                        <p>Con esas dos condiciones, tenía las siguientes opciones:
+                        </p>
+                        </div>
+                    <div class="celda etiqueta">
+                        <input type="radio" id="informatica" name="estudios"> Informática <br />
+                        <input type="radio" id="magisterio" name="estudios"> Magisterio <br />
+                        <input type="radio" id="empresariales" name="estudios"> Empresariales <br />
+                        <input type="radio" id="ingenierias" name="estudios"> Ingenierías (Telecomunicaciones u Obras Públicas)
+                        <p>¿Cuál creéis que fue mi decisión?</p>
+                        <input pys-onClick="sub" type="submit" id="btn-check" value="check">Comprobar respuesta</input>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita negrita"><p> CAPITULO 2. DE LO QUE SUCEDIÓ AL TERMINAR LOS ESTUDIOS</p></div>
+                    <div class="celda control"> </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta"><p>FINALES DE 2011. TERMINO LA CARRERA A FALTA DE PROYECTO Y ME VOY A LONDRES:
+                        1.	APRENDER INGLÉS
+                        2.	SALIR DE MI ZONA DE COMFORT
+                        3.	TRABAJO EN MC DONALDS DONDE LLEGO A GANAR HASTA UN PREMIO</p>                       
+                         </div>
+                    
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 3. DONDE SE CUENTA LO QUE HICE AL VOLVER DE INGLATERRA</p></div>
+                    <div class="celda control"> </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta"><p>FINALES DE 2012. VUELVO A ESPAÑA PARA HACER EL PROYECTO Y VER A QUE ME PUEDO DEDICAR, PENSAR SOBRE MI FUTURO. PRESENTO PROYECTO Y YA SOY INGENIERO Y HABLO INGLÉS. NO HAY MUCHAS OPCIONES LABORALES. 
+                        FINALES DE 2013. ME MATRICULO CURSO DE ADAPTACIÓN AL GRADO. CON ESTE TÍTULO VOY A SER INGENIERO EN EUROPA. TERMINO A MEDIADOS DE 2014 Y SIGO EN ESE PUNTO DE QUE NO SÉ QUE HACER. HE HECHO LO QUE SE ME HA PEDIDO Y AÚN ASÍ NO HAY POSIBILIDADES LABORALES.</p>
+                    </div>                    
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 4. DONDE SE PROSIGUEN MIS HISTORIAS PARA MEJORAR EL INGLÉS E INTENTAR ENCONTRAR UN TRABAJO</p></div>
+                    
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta"><p>PRINCIPIOS DE 2015. CANSADO DE NO HACER NADA POR MI FUTURO PROFESIONAL, ME VOY A DUBLIN A MEJORAR MI INGLÉS. DESCUBRO LOS CURSOS ONLINE, DONDE EMPIEZO A HACER CURSOS ONLINE SOBRE TODO DE INGENIERÍA Y DESCUBRO LOS CURSOS DE COMPUTER SCIENCE.</p></div>
+                    
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 5. DONDE SE INICIA EL CONTACTO CON VIAJAR</p></div>
+                    <div class="celda control"> </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta"><p>FINALES DE 2015. ME VOY DE VIAJE CON AMIGOS A FILIPINAS. DESCUBRO LO INTERESANTE QUE ES VIAJAR A SITIOS CON CULTURAS DISTINTAS A LAS NUESTRAS.</p>
+                        
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 6. DE LO QUE SUCEDIÓ AL INTENTAR CONSEGUIR UN TRABAJO COMO INGENIERO Y CONOCER OTROS CAMINOS</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta"><p>PRINCIPIOS DE 2016. VUELVO A DUBLIN, PARA MEJORAR INGLÉS E INTENTAR CONSEGUIR UN TRABAJO COMO INGENIERO. HAGO UNA ENTREVISTA QUE NO LLEGO A PASAR. ME VUELVO A ESPAÑA QUE ME IBAN A CONSEGUIR UN TRABAJO QUE NO LLEGA A SALIR. DECIDO QUE YA ESTÁ BIEN DE PENSAR EN LO PROFESIONAL, QUE TOCA CRECER EN LO PERSONAL Y ME HAGO MOCHILERO. ME VOY A RECORRER VIETNAM, LAOS Y CAMBODIA.</p>                          
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 7. DE COMO PROSEGUÍ MI CAMINO INTENTANDO PRODUNDIZAR</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta"><p>PRINCIPIOS 2017. AL VOLVER DE MI VIAJE ME DOY CUENTA QUE HA ESTADO MUY BIEN PERO QUE NECESITO PROFUNDIZAR EN LAS CULTURAS LOCALES. ME VOY DIRECTO PARA NEPAL A HACER MI PRIMER VOLUNTARIADO.
+                            FINALES DE 2017. TOCA OTRO VIAJE. DECIDO IRME A INDONESIA, MALASIA Y SINGAPUR. EMPIEZO EL VIAJE CON UN VOLUNTARIADO DE EDUCACIÓN. ME HAGO PROFESOR DE INGLÉS EN UN COLEGIO DE INDONESIA. </p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 8. DONDE FINALIZAN LAS ANDADAS POR SUDESTE ASIÁTICO Y COMIENZAN NUEVAS</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta"><p>2018. YA HE RECORRIDO VARIOS PAISES, SUMERGIENDOME LIGERAMENTE EN LA CULTURA. “YA HE CONOCIDO ASIA”. ME TOCA AFRICA. ME BUSCO VOLUNTARIADO EN UGANDA.</p>
+
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 9. DE LO QUE ACONTECIÓ EN MIS ANDADURAS POR AFRICA</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta"> <p>FINALES DE 2018 E INICIOS DE 2019. COLABORO CON LA ONG RAFIKI AFRICA Y HAGO VARIOS VIAJES A UGANDA.</p>
+
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 10. DONDE SE DA FIN A LAS ANDADURAS POR ÁFRICA Y COMIENZAN NUEVAS AVENTURAS</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta"><p>FINALES DE 2019. “YA CONOZCO ASIA Y AFRICA”. ME TOCA CONOCER ORIENTE MEDIO. PLAN: 3 MESES DE VIAJE POR LA RUTA DE LA SEDA, TERMINANDO CON UN VIAJE A SAARISELKA (NORTE DE FINLANDIA) DONDE VOY A TRABAJAR CON “ACTIVITY INSTRUCTOR”. ME TOCA VOLVERME A LOS 2 MESES, MI PADRE ESTÁ MUY MAL.</p>
+
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 11. QUE TRATA SOBRE LA VUELTA A LA VIDA NORMAL</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta"><p>2020. DECIDO ESTABLECERME POR UN TIEMPO EN ESPAÑA. COMO DE VEZ EN CUANDO HACÍA ALGÚN CURSO, LOS CURSOS DE PROGRAMACIÓN ME CONECTAN CON CURSOS DE DATA SCIENCE, BUSINESS INTELLIGENCE, BIG DATA…DECIDO QUE A ESO ME QUIERO DEDICAR. QUE ME ENCANTA.
+                            DESDE ENTONCES TRABAJO FINES DE SEMANA Y ESTUDIO ENTRE SEMANA.
+                            ME PLANTEÉ LA OPCIÓN DEL MASTER, ME ESTUVE INFORMANDO Y LOS QUE ESTABAN A MI ALCANCE SOLO SERVÍAN PARA EL CV. ASÍ QUE TENGO LO DEL MASTER PARALIZADO Y EMPECÉ UN FP SUPERIOR DE DESARROLLO DE APLICACIONES MULTIPLATAFORMA PORQUE ME PARECÍA FUNDAMENTAL SABER PROGRAMAR PARA PODER HACER CIENCIA DE DATOS.</p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="celda etiqueta negrita"><p>CAPÍTULO 12. QUE TRATA DE MI SITUACIÓN ACTUAL</p></div>
+                    <div class="fila">
+                        <div class="celda etiqueta">ACTUALMENTE SIGO ESTUDIANDO POR MI CUENTA Y TERMINANDO PRIMERO.
+                            
+                    </div>
+                </div>          
+            </div>            
+        </div>
+    </form>
+</body>
+</html>
