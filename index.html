@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
     <style>
         body {
             border: 0px;
@@ -44,10 +45,9 @@
             font-weight: bold;
         }
     </style>
-</head>
 <body>
-    <h2>SOBRE MI Y COMO LLEGUÉ AQUÍ</h2>
-    <form action="http://servidor5/manejador3.asp" method="post">
+<form onsubmit="return false">
+    <h2>SOBRE MI Y COMO LLEGUÉ AQUÍ</h2>   
         <div class="contenedor">
             <div>
                 <div class="fila">
@@ -86,7 +86,9 @@
                         <input type="radio" id="empresariales" name="estudios"> Empresariales <br />
                         <input type="radio" id="ingenierias" name="estudios"> Ingenierías (Telecomunicaciones u Obras Públicas)
                         <p>¿Cuál creéis que fue mi decisión?</p>
-                        <input pys-onClick="sub" type="submit" id="btn-check" value="check">Comprobar respuesta</input>
+                        <input pys-onClick="sub" type="submit" id="btn-check" value="COMPROBAR RESPUESTA">
+			<p>Output:</p>
+    			<p id = 'output'></p>
                     </div>
                 </div>
                 <div class="fila">
@@ -178,5 +180,12 @@
             </div>            
         </div>
     </form>
+	<py-script>
+
+        def sub(*args,**kwargs):
+            result_place = Element('output')
+            result_place.write("HOLA")
+    
+    	</py-script>
 </body>
 </html>
